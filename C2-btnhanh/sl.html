@@ -1,0 +1,239 @@
+by Nguyễn Thành Thủy – MIS Dept. – Da Nang University of Economics
+❑ Cú pháp:
+<Tagname Attribute=‘Value’>nội dung...</Tagname>
+
+❑ Thẻ thuộc tính (Attribute):
+❑ Cung cấp thông tin bổ sung cho thẻ thành phần;
+❑ Tất cả các thẻ thành phần đều có thể có thẻ thuộc tính;
+❑ Thẻ thuộc tính được đặt trong thẻ thành phần mở;
+❑ Thẻ thuộc tính đi theo cặp <tên> và <giá trị>: Attribute=‘Value’
+
+❑ Ví dụ:
+<a href=“https://hoctructuyen123.net">Hello World</a>
+<img src="img_logo.jpg">
+by Nguyễn Thành Thủy – MIS Dept. – Da Nang University of Economics
+CẤU TRÚC THẺ HTML
+
+❑ Các thẻ thuộc tính phổ biển
+Attribute Description
+id, name, for         Định danh cho đối tượng
+alt                   Sử dụng kèm với thẻ <img>, hiển thị mô tả khi hình ảnh không load được
+title                 Sử dụng kèm với thẻ <p>, <div>, ... Hiển thị mô tả khi đưa trỏ chuột lên đối tượng
+disabled              Vô hiệu hóa đối tượng
+href                  Sử dụng kèm với thẻ <a>,thiết lập URL cho một liên kết
+src                   Sử dụng kèm với thẻ <img>, thiết lập URL cho một file hình
+width                 Thiết lập chiều rộng
+height                Thiết lập chiều cao
+border                Thiết lập độ dày đường viền
+style                 Thiết lập định dạng CSS cho đối tượng
+
+
+
+CẤU TRÚC THẺ HTML
+
+❑ Thuộc tính Style
+❑ Được sử dụng với hầu hết các thẻ thành phần HTML, nhằm thiết lập định
+dạng cho dữ liệu;
+❑ Cú pháp:
+<tagname style="property1:value1; property2:value2;">
+
+❑ Ví dụ:
+<h1 style="color: blue; font-family: verdana;
+background-color: powderblue;">This is a heading</h1>
+
+CẤU TRÚC THẺ HTML
+Các thẻ thuộc tính phổ biển
+
+color: ‹value>
+            Thiết lập màu chữ cho văn bản
+            <h1 style="color:blue;"> This is a heading</h1>
+font-family:<value>
+          Thiết lập loại font chữ cho văn bản
+           <h1 style="font-family:verdana;"> This is a heading</h1>
+font-size: <value>
+          Thiết lập size chữ cho văn bản
+           <h1 style="font-size:300%;">This is a heading</h1>
+text-align:center / left /right
+               Thiết lập canh lề cho văn bản
+              <h1 style="text-align:center;"> This is a heading</h1>
+              background-color:<value> Thiết lập màu nền cho văn bản
+                <h1 style="background-color:powderblue;">This is a heading</h1>
+border-style:<value>Thiết lập kiểu đường viền cho đối tượng
+               ‹div style="border-style:solid;">This is a heading</div>
+border-width:<value>Thiết lập độ dầy đường viền cho đối tượng
+             <div style="border-width: 10px;">This is a heading </div>
+
+
+
+
+             NHÓM THẺ ĐỊNH DẠNG VĂN BẢN
+
+             ❑ Heading Tags
+             <h1>Heading 1</h1>
+             <h2>Heading 2</h2>
+             <h3>Heading 3</h3>
+             <h4>Heading 4</h4>
+             <h5>Heading 5</h5>
+             <h6>Heading 6</h6>
+
+<b>... </b> In đậm một khối văn bản
+    <b>Hệ thống thông tin quản ly</b>
+<strong>...</strong> Đánh dấu một khối văn bản cho là quan trọng, đồng thời nội dung sẽ được in đậm.
+    <strong>Hệ thống thông tin quản lý</strong>
+<i>...</i>In nghiên một khối văn bản
+    <i>Hệ thống thông tin quản lý</i>
+<u>...</u>Gạch chân một khối văn bản
+    <u>Hệ thống thông tin quản lý</u>
+<p>...</p>
+    Định dạng đoạn văn bản. Thường sử dụng để ngắt dòng văn bản.
+    <p> Đoạn thứ 1</p>
+    <p> Đoạn thứ 2</p>
+<br>
+    Xuống dòng văn bản
+    <br>Đoạn thứ 1
+    <br>Đoạn thứ 2
+<pre>
+  
+</pre>
+    Hiển thị một khối văn bản, có nhiều đoạn được ngắt dòng.
+    <pre>
+    Tin học văn phòng
+    Cơ sở lập trình
+    Mạng và truyền thông
+    </pre>
+
+
+Nhóm thẻ định dạng văn bản
+<div>
+    ..•
+</div>
+ 
+    Thường dùng để định dạng một khối gồm nhiều dòng văn bản.
+    <div style="background-color:green;color:white;">
+    <h2>Hệ thống thông tin quản lý</h2>
+    <p> Là ngành học có sự kết hợp giữa kiến thức và kỹ năng của hai
+    lĩnh vực CNTT và Kinh tế.</p>
+    </div>
+<span>
+    .••
+</span>
+    Thường dùng để định dạng một khối chỉ có một từ hoặc một dòng văn
+    bản. Có thể dùng <div> thay cho <span>
+    <h1>My <span style="color:red"> Important</span>Heading</h1>
+<!--
+    --> 
+    Dùng để tạo các phần ghi chú trong code HTML. Phần ghi chú này sẽ
+    không hiển thị trên trình duyệt web.
+    <p> This is a paragraph.</p>
+    <!-- Remember to add more information here -->
+em          In nghiên (tương tự thẻ <i>..</i>)
+mark        Làm nổi bật
+small       Thu nhỏ font chữ
+del         Gạch ngang thân chữ
+ins         Gạch chân (tương tự thẻ <u>..</u>)    
+sub         Tạo chỉ số dưới
+sup         Tạo chỉ số trên
+
+
+❑ Thẻ <a>
+❑ Dùng để tạo liên kết giữa các trang web;
+❑ Cú pháp:
+<a href="url" target="value">...</a>
+– Thẻ thuộc tính:
+» href: chứa đường dẫn URL của trang web cần liên kết đến;
+» target: có các giá trị chỉ định vùng cửa sổ sẽ hiển thị trang liên kết
+» _self (default): cửa sổ hiện hành;
+» _blank: mở cửa sổ mới;
+» _parent: mở ở frame chính (sử dụng với thẻ <iframe>);
+» _top: mở ở frame trên cùng (sử dụng với thẻ <iframe>);
+
+– Ví dụ:
+<a href="https://hoctructuyen123.net">Visit hoctructuyen123.net!</a>
+
+
+
+
+❑ Thẻ <img>
+❑ Dùng để chèn hình vào trang web;
+❑ Cú pháp:
+<img src="url_pic" alt="value" width="value" height="value">
+– Thẻ thuộc tính:
+» src: chứa đường dẫn URL hình cần chèn;
+» alt: chứa nội dung thông báo khi đưa trỏ chuột lên hình;
+» width, height: chiều rộng và chiều cao của hình;
+
+– Ví dụ:
+
+<img src="https://hoctructuyen123.net/wp-
+content/uploads/2021/10/Logo_HocTrucTuyen123.NET_-1.png"
+
+alt="Visit hoctructuyen123!" width="300" height="100">
+
+
+
+NHÓM THẺ ĐỊNH DẠNG VĂN BẢN
+<ul>
+    <li>...</li>
+    <li>..</li>
+<ul>
+
+            Tạo danh sách không đánh số thứ tự (unordered list)
+            <ul>
+            <li> Tin học văn phòng</li>
+            <li> Cơ sở lập trình</li>
+            <li>Mạng và truyền thông</li>
+            </ul>
+
+<ol>
+    <li>...</li>
+    <li>..</li>
+<ol>
+    
+    Tạo danh sách có đánh số thứ tự (ordered list)
+    <ol>
+    <i> Tin học văn phòng </li>
+    <li>Cơ sở lập trình</li>
+    <i> Mạng và truyền thông ≤/li>
+    </ol>
+
+
+
+NHÓM THẺ TABLE
+• Các thẻ chính:
+<table></table>: định nghĩa cấu trúc bảng;
+• <caption> ... </caption>: định nghĩa tên cho bảng;
+•<th></th>: định nghĩa 1 tiêu đề cột (table headers);
+• <tr> ... </tr>: định nghĩa 1 dòng (table rows);
+• <td> ... </td>: định nghĩa 1 ô (table data);
+• <thead> ... </thead>: nhóm các thẻ làm tiêu đề cho bảng;
+<tbody> ... </tbody>: nhóm các thẻ là phần nội dung chính của bảng;
+• <tfoot> ... </tfoot>: nhóm các thẻ làm phần chân cho bảng;
+
+
+
+NHÓM THẺ FORM
+<form>...</form>Khởi tạo 1 form nhập liệu
+<button>...</button>Định nghĩa nút lệnh (button)
+<label>...</label>Định nghĩa một nhãn thông tin
+<input type="value">Định nghĩa một đối tượng nhập liệu, kiểu đối tượng
+tùy theo giá trị của thuộc tính type
+
+Thẻ form
+❑ Thuộc tính action
+     - action="url"
+
+❑ Thuộc tính method
+    - method="post"
+    - method="get"
+
+<form action="/doAction" method="post">
+...
+    <button type="submit">Submit</button>
+</form>
+
+❑ Ví dụ:
+<form method="post" action="/search">
+<label for="TenSanPham">Tên sản phẩm:</label>
+<input type="text" value="abc" id="TenSanPham" name="TenSanPham">
+<button name="btn_Tim">Tìm</button>
+</form>
