@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap:5px;
+        }
+        .item{
+            background-color:aquamarine;
+            padding:20px;
+        }
+        @media screen and (min-width:768px) and (max-width:1023px){
+            .grid-container{
+                grid-template-columns: auto auto auto auto;
+            }
+        }
+        @media screen and (max-width:639px){
+            .grid-container{
+                grid-template-columns: auto auto auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item c1">Mục 1</div>
+        <div class="item c2">Mục 2</div>
+        <div class="item c3">Mục 3</div>
+        <div class="item c4">Mục 4</div>
+        <div class="item c5">Mục 5</div>
+        <div class="item c6">Mục 6</div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid with Auto-fit</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* Sử dụng auto-fit để các cột tự động sắp xếp tùy theo kích thước */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: aquamarine;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item c1">Mục 1</div>
+        <div class="item c2">Mục 2</div>
+        <div class="item c3">Mục 3</div>
+        <div class="item c4">Mục 4</div>
+        <div class="item c5">Mục 5</div>
+        <div class="item c6">Mục 6</div>
+    </div>
+</body>
+</html>

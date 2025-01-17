@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcontainer {
+            display:grid;
+            grid-template-areas:        'item1 item1 item2'
+                                        'item3 item4 item4'
+                                        'item3 item5 item6' ;
+            gap:5px;
+        }
+        .items{
+            padding:10px;
+            text-align: center;
+        }
+        .item1{
+            grid-area: item1;
+            background-color: green;
+        }
+        .item2{
+            grid-area: item2;
+            background-color: beige
+        }
+        .item3{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: item3;
+            background-color: aqua;
+        }
+        .item4{
+            grid-area: item4;
+            background-color: pink
+        }
+        .item5{
+            grid-area: item5;
+            background-color: purple
+        }
+        .item6{
+            grid-area: item6;
+            background-color: orange
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+        <div class="items item6">6</div>
+
+    </div>
+</body>
+</html>

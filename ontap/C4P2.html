@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cách 1: đẶt code js trong body</h2>
+    <p id="vd">NỘi dung này sẽ đc thay thế</p>
+
+    <script>
+        document.getElementById("vd").innerHTML="Xin chào!!"
+
+    </script>
+</body>
+</html>
+
+
+
+❑ Cách 2: đặt code javascript trong các hàm sự kiện tương tác
+❑ onclick : khi click lên đối tượng
+❑ onchange : khi giá trị thẻ thành phần của đối tượng được thay đổi
+❑ onmouseover : khi đưa chuột vào đối tượng
+❑ onmouseout : khi đưa chuột ra ngoài khỏi đối tượng
+❑ onkeydown : khi nhập dữ liệu vào textbox
+❑ onload : khi trang web được load lên
+
+/////////////////////////////////
+
+<h3>My first JS</h3>
+<button type="button"
+onclick="alert('Xin chào !!! hni bạn khỏe khom')">
+Clickme</button> <br>
+
+//////////////////////////
+<img src="###" width="200px"
+onmouseover="alert('BẠn vưfa mới đưa chuột lên hình ni')">
+
+/////////////////////
+<input id="txt"
+onkeydown="document.getElementById('hienthi').innerHTML=
+document.getElementById('txt').value">
+<p id="hienthi">ví dụ về sk onkeydown</p>
+
+
+/////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showTime()
+        {
+            document.getElementById("hienthioday").innerHTML=Date()
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="showTime()">The time</button>
+    <p id="hienthioday"></p>
+</body>
+</html>
+
+//////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showtime()">the time is?</button>
+<p id="showtimehere"></p>
+<script>
+    function showtime(){
+        document.getElementById("showtimehere").innerHTML=Date();
+    }
+</script>
+</body>
+</html>
+
+////////////////////////
+
+❑ Cách 4:
+❑ Đặt code Javascript trong một file *.js;
+❑ Nhúng file *.js vào trang web theo cú pháp:
+<script src=“file.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./codetrongHTMl.js"></script>
+</head>
+<body>
+    <button onclick="showTime()">thetimeis</button>
+    <p id="hienthitaiday"></p>
+</body>
+</html>
+
+
+
+
+/////////////////////////DOM/////////////////
+❑ DOM: Document Object Model
+❑ Javascript có thể tiếp cận và thay đổi giá trị của các phần tử HTML trên trang
+web thông qua DOM
+
+❑ Tìm kiếm một thành phần HTML
+❑ document.getElementById(id): tìm theo tên id
+❑ document.getElementsByTagName(name)[num]: tìm theo tên thẻ thành
+phần name
+❑ document.getElementsByClassName(name)[num]: tìm theo tên class
+name
+
+<h2>VÍ dụ thể getElementById</h2>
+<p id="whattime">MẤy giờ roài</p>
+
+<button 
+    onclick="document.getElementById('whattime').innerHTML=Date()">
+    click me
+</button>
+
+
+
+///////////////////////
+<button onclick="document.getElementById('bongden').src='hanoi.jpg">Bật đèn</button>
+<img id="bongden"src="./mix/hanoi.jpg" >
+
+<button onclick="document.getElementById('bongden').src='../Chuong4P2/tatden.jpg'">Tắt đèn</button>
+
+
+<img src='../Chuong4P2/tatden.jpg'
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>{}</script>
+</body>
+</html>
+
+
+<h></script>

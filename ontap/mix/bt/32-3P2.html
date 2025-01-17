@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar a{
+            text-decoration:none;
+            color:blue;
+            margin:10px;
+        }
+        .nav{
+            display:flex;
+            background-color: aqua;
+            height:auto;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: baseline;
+        }
+        .nav a:hover {
+            background: #1565C0;
+          }
+        
+        @media screen and (max-width:768px)
+        {
+            .nav{
+                flex-direction: column;
+                height:auto;
+            }
+            .bar{
+                height:10vh;
+                display:flex;
+                align-items: center;
+            }
+ 
+        }
+        @media screen and (min-width:769px)
+        {
+            .nav{
+                flex-direction: row;
+                height:auto;
+                justify-content:space-around;
+            }
+            .bar {
+                height:8vh;
+                display:flex;
+                align-items: center;
+                
+            }
+        }
+        @media screen and (min-width:1024px)
+        {
+            .nav{
+                flex-direction: row;
+                height:auto;
+                justify-content:flex-end;
+            }
+            .bar {
+                height:8vh;
+                display:flex;
+                align-items: center;
+                
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="bar h"><a href='#'>Home</a></div>
+        <div class="bar a"><a href='#'>About</a></div>
+        <div class="bar p"><a href='#'>Products</a></div>
+        <div class="bar c"><a href='#'>Contact</a></div>
+    </div>
+</body>
+</html>

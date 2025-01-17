@@ -1,0 +1,407 @@
+GIẢI BÀI TẬP
+Bài tập 33.1 Câu b - Slide 17, Chương 3P3
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .grid_container {
+            display: grid;
+            background-color: coral;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid_item {
+            background-color: antiquewhite;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 4vw;
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 640px) {
+            .grid_container {
+                grid-template-columns: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .grid_container {
+                grid-template-columns: auto auto;
+            }
+
+            .header {
+                grid-column: 1/3;
+            }
+
+            .menu {
+                grid-column: 1/3;
+            }
+
+            .footer {
+                grid-column: 1/3;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: auto auto auto;
+            }
+
+            .header {
+                grid-column: 1/4;
+            }
+
+            .menu {
+                grid-row: 2/4;
+                grid-column: 1/2;
+            }
+
+            .footer {
+                grid-column: 2/4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="grid_item header">Header</div>
+        <div class="grid_item menu">Menu</div>
+        <div class="grid_item main">Main</div>
+        <div class="grid_item right">Right</div>
+        <div class="grid_item footer">Footer</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+Bài tập 33.1 Câu a - Slide 17, Chương 3P3
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            gap: 10px;
+        }
+
+        .grid_item {
+            background-color: bisque;
+            font-size: 2vw;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            grid-column: 1/3;
+            background-color: aquamarine;
+        }
+
+        .item2 {
+            background-color: antiquewhite;
+        }
+
+        .item3 {
+            grid-row: 2/4;
+            background-color: aqua;
+        }
+
+        .item4 {
+            grid-column: 2/4;
+            background-color: deeppink;
+        }
+
+        .item5 {
+            background-color: azure;
+        }
+
+        .item6 {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="grid_item item1">1</div>
+        <div class="grid_item item2">2</div>
+        <div class="grid_item item3">3</div>
+        <div class="grid_item item4">4</div>
+        <div class="grid_item item5">5</div>
+        <div class="grid_item item6">6</div>
+    </div>
+</body>
+
+</html>
+
+
+Bài tập 32.1 - Slide 12, Chương 3P2
+
+Code HTML
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bai321.css">
+</head>
+
+<body>
+    <div class="form_DangKy">
+        <form>
+            <div class="item hoten">
+                <label>Họ tên</label>
+                <input type="text" required>
+            </div>
+            <div class="item ngaysinh">
+                <label>Ngày sinh</label>
+                <input type="date" required>
+            </div>
+            <div class="item email">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+            <div class="item sdt">
+                <label>SĐT</label>
+                <input type="tel" pattern="[0-9]{10}" required>
+            </div>
+            <div class="item btn_DangKy">
+                <input type="submit" value="Đăng ký">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+CODE CSS:
+* {
+font-size: 15pt;
+margin-top: 0.5vh;
+}
+
+
+body {
+color: white;
+}
+
+
+.form_DangKy {
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+border: 1px ridge gainsboro;
+}
+
+
+.form_DangKy .item {
+display: flex;
+margin-left: 1vw;
+margin-top: 0.5vw;
+}
+
+
+.form_DangKy .item>label {
+width: 30%;
+font-weight: bold;
+}
+
+
+.form_DangKy .item>input {
+width: 65%;
+}
+
+
+.form_DangKy .item>input[type=submit] {
+width: 100px;
+}
+
+
+@media screen and (max-width: 640px) {
+body {
+background-color: darkcyan;
+}
+.form_DangKy{
+width: 100%;
+}
+.form_DangKy .item {
+/* display: flex; */
+flex-direction:column;
+}
+.form_DangKy .item>input {
+width: 95%;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+body {
+background-color: blueviolet;
+}
+.form_DangKy{
+width: 80%;
+}
+}
+
+
+@media screen and (min-width: 1024px) {
+body {
+background-color: blue;
+}
+.form_DangKy{
+width: 50%;
+}
+}
+
+
+Bài 32.2 - Slide 28, Chương 3P2
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Bai322a.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="dish my">35%</div>
+        <div class="dish bun">50%</div>
+        <div class="dish chao">15%</div>
+    </div>
+</body>
+
+</html>
+
+
+CSS:
+.container {
+display: flex;
+height: 30px;
+font-size: 2vw;
+align-items: stretch;
+justify-content: flex-start;
+}
+
+
+.dish {
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+
+.my {
+background-color: coral;
+flex-basis: 35%;
+}
+
+
+.bun {
+background-color: gold;
+flex-basis: 50%;
+}
+
+
+.chao {
+background-color: cadetblue;
+flex-basis: 15%;
+}
+
+
+Bài 32.3 - Slide 31, Chương 3P2
+
+
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Bai323.css">
+</head>
+
+
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+
+
+</html>
+
+CSS:
+.nav {
+display: flex;
+flex-flow: row wrap;
+list-style: none;
+margin: 0;
+background: deepskyblue;
+}
+
+
+.nav a {
+text-decoration: none;
+display: block;
+padding: 1em;
+}
+
+
+.nav a:hover {
+background: #1565C0;
+}
+
+@media all and (max-width: 640px) {
+.nav {
+flex-flow: column wrap;
+padding: 0;
+}
+
+
+.nav a {
+text-align: center;
+padding: 10px;
+}
+}
+
+
+@media all and (min-width: 768px) {
+.nav {
+justify-content: space-around;
+}
+}
+
+
+@media all and (min-width: 1024px) {
+.nav {
+justify-content: flex-end;
+}
+}

@@ -1,0 +1,33 @@
+.body{
+    font-family: arial, sans-serif;
+    background-color: burlywood;
+}
+.container{
+    display:flex;
+    flex-direction: row;   
+    margin :5px;
+}
+h1{
+    color:red;
+    font-family: 14px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    
+}
+.dk{
+    background-color: blue;
+    border:none;
+}
+.xoa{
+    background-color: red;
+    border:none;
+}
+.btn{
+    width:100%
+}
+
+
+
+

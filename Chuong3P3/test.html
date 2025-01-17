@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcontainer{
+            background-color: coral;
+            display: grid;
+            padding: 5px;
+            gap:15px;
+
+        }
+        .items{
+            display:flex;
+            text-align: center;
+            padding:20px;
+        }
+        @media screen and (max-width:640px){
+            .gridcontainer{
+                grid-template-columns: auto auto auto;
+            }
+ 
+        }
+        @media (min-width:768px){
+            .gridcontainer{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+        @media (min-width:1024px){
+            .gridcontainer{
+                grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="items item1">Mục 1</div>
+        <div class="items item2">Mục 2</div>
+        <div class="items item3">Mục 3</div>
+        <div class="items item4">Mục 4</div>
+        <div class="items item5">Mục 5</div>
+        <div class="items item5">Mục 6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!-- ❑ DOM: Document Object Model
+❑ Javascript có thể tiếp cận và thay đổi giá trị của các phần tử HTML trên trang
+web thông qua DOM
+
+❑ Tìm kiếm một thành phần HTML
+❑ document.getElementById(id): tìm theo tên id
+❑ document.getElementsByTagName(name)[num]: tìm theo tên thẻ thành
+phần name
+❑ document.getElementsByClassName(name)[num]: tìm theo tên class
+name
+
+<h2>VÍ dụ thể getElementById</h2>
+<p id="whattime">MẤy giờ roài</p>
+
+<button 
+    onclick="document.getElementById('whattime').innerHTML=Date()">
+    click me
+</button>
+
+
+
+///////////////////////
+<button onclick="document.getElementById('bongden').src='hanoi.jpg">Bật đèn</button>
+<img id="bongden"src="hanoi.jpg" >
+
+<button onclick="document.getElementById('bongden').src='../Chuong4P2/tatden.jpg'">Tắt đèn</button>
+
+
+<img src='../Chuong4P2/tatden.jpg'>
+
+//////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function oncl(){
+            document.getElementsByTagName("p")[0].innerHTML
+            ="DÒng một đã đđợc thay dổi r"
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="oncl()">Click here</button>
+
+    <p>DÒng 1</p>
+    <p>dòng 2</p>
+</body>
+</html>
+
+
+//////////////////////////////
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myF(){
+            var x=document.getElementsByTagName("LI");
+            document.getElementById("demo").innerHTML=x[1].innerHTML;
+        }
+    </script>
+</head>
+<body>
+   
+
+        <p>Thực đưn</p>
+        <ul>
+            <li>cf</li>
+            <li>bx</li>
+            <li>mcha</li>
+        </ul>
+    
+        <button onclick='myF()'>click here</button>
+        <p id="demo"></p>
+</body>
+</html>
+
+❑ DOM CSS: cho phép thay đổi các thuộc tính CSS trong HTML
+❑ Cú pháp:
+document.getElementById(id).style.property = new style
+ -->
+
+///vd13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello wordl!</p>
+    <script>
+        document.getElementById('demo').style.textAlign="center"
+    </script>
+</body>
+</html>
+
+/////vd14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ham(){
+            document.getElementById('row2').style.color="red"
+            document.getElementById('row2').style.fontFamily="Arial"
+
+        }
+    </script>
+</head>
+<body>
+    <p id="row1">hêlô</p>
+    <p id="row2" onclick="ham()">hôlê</p>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Chào mừng bạn đến vứi trang web của chúng tui !!!!</h1>
+    <div>
+        <span id="datetime"></span>  Không có nội dung ban đầu 
+        <script>
+            window.onload = function() {
+                // Lấy ngày và giờ hiện tại
+                const now = new Date();
+                // Định dạng ngày và giờ
+                const day = now.getDate().toString().padStart(2, '0');
+                const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Tháng bắt đầu từ 0
+                const year = now.getFullYear();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                
+                // Hiển thị ngày và giờ
+                const dateTime = `Ngày ${day}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
+                
+                // Cập nhật nội dung trong span
+                document.getElementById('datetime').textContent = `Hôm nay là: ${dateTime}`;
+            };
+        </script>
+    </div>
+    
+</body>
+</html>
+
+/////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span id='datet'></span>
+        <script>
+            window.onload=function(){
+                const DateTime=new Date()
+            
+            document.getElementById("datet").textContent=DateTime
+                }
+        </script>
+    </div>
+</body>
+</html>
+
+//////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Thay đổi màu sắc đoạn văn</h1>
+    <span id="nd">dDÂy là nd trc khi thay đổi</span>
+    <script>
+        window.onload=function(){
+            document.getElementById("nd").style.color="red"
+        }
+        
+    </script>
+</body>
+</html>
+
+///////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body >
+    <div class="container">
+        <h1>Nhấn nút để thay đổi màu nền</h1>
+        <button onclick="doimau()">Thay đổi màu nền</button>
+        <script>
+            colors=["#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#FFFF33", "#33FFFF"]
+            
+            function doimau(){
+                const randomColor =colors[Math.floor (Math.random() * colors.length)]
+                
+                document.body.style.backgroundColor=randomColor
+            }
+            
+            
+            
+        </script>
+    </div>
+</body>
+</html>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseover="vao()"  onmouseout="ra()">Hãy di chuột vào vb để xem thông báo</h1>
+    <p id="oday" style="color: red"></p>
+    
+    <script>
+        function vao(){
+            document.getElementById("oday").textContent="Bạn vừa di chuột vào"
+        }
+        function ra(){
+            document.getElementById("oday").textContent=""
+        }
+    </script>
+</body>
+</html>
+    

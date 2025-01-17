@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        /* Đặt định dạng chung cho container */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .product-item {
+            background-color: #d46a6a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+        /* Điều chỉnh cho màn hình dưới 1024px */
+        @media screen and (max-width: 1024px) {
+            .product-item {
+                flex: 1 1 calc(50% - 15px); /* 2 cột khi màn hình nhỏ hơn 1024px */
+            }
+        }
+
+        /* Điều chỉnh cho màn hình dưới 768px */
+        @media screen and (min-width: 1024px) {
+            .product-item {
+                flex: 1 1 calc(25% - 15px);  /* 1 cột khi màn hình nhỏ hơn 768px */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <div class="product-item">Sản phẩm 1</div>
+        <div class="product-item">Sản phẩm 2</div>
+        <div class="product-item">Sản phẩm 3</div>
+        <div class="product-item">Sản phẩm 4</div>
+        <div class="product-item">Sản phẩm 5</div>
+        <div class="product-item">Sản phẩm 6</div>
+        <div class="product-item">Sản phẩm 7</div>
+        <div class="product-item">Sản phẩm 8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <style>
+        .web-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: #ffffe3;
+
+        }
+
+        body {
+            background-color: antiquewhite;
+            border: 1px solid white;
+            width: 600px;
+            margin-left: 140px;
+        }
+
+        .fa-map-marker-alt,
+        .fa-phone-alt,
+        .fa-envelope,
+        .text {
+            color: #538fff
+        }
+
+        .tieude {
+            font-weight: bolder;
+            font-size: 17px;
+        }
+
+        .item {
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 10px;
+        }
+
+        .chunho {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .text {
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 20px
+        }
+
+        input {
+            margin-bottom: 7px;
+            height: 30px;
+            width: 390px;
+        }
+
+        textarea {
+            height: 60px;
+            width: 390px;
+        }
+
+        button {
+            height: 30px;
+            background-color: cornflowerblue;
+            color: white;
+            border-radius: 5px;
+            border: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web-container">
+        <div class="grid-container1">
+            <div class="item i1">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="tieude">Address</p>
+                <p class="chunho">Surkhet, NP12</p>
+                <p class="chunho">Breendranagar 06</p>
+            </div>
+            <div class="item i2">
+                <i class="fas fa-phone-alt"></i>
+                <p class="tieude">Phone</p>
+                <p class="chunho">+0058 9893 5847</p>
+                <p class="chunho">+0056 3434 5818</p>
+            </div>
+            <div class="item i3">
+                <i class="fas fa-envelope"></i>
+                <p class="tieude">Email</p>
+                <p class="chunho">Codingtax@gmail.com</p>
+                <p class="chunho">info codingtax@gmail.com
+            </div>
+        </div>
+        <div class="grid-container2">
+            <form>
+                <div class="text">Send us a message</div>
+
+                <p>If you have any work from me or any types of quries related to my tutorial, you can send me message
+                    from here. It's my pleassure to help you.</p>
+                <div class="itemm a1"><input type="text" placeholder="Enter your name" required></div>
+                <div class="itemm a2"><input type="text" placeholder="Enter your email" required></div>
+                <div class="itemm a3"><textarea placeholder="Enter your message" required></textarea></div>
+                <div><button>Send Now</button></div>
+            </form>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffe3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            max-width: 550px;
+            box-sizing: border-box;
+            border-top: 5px solid #42a5f5;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1e88e5;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: #555;
+            flex: 1;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            flex: 2;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #b0bec5;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #42a5f5;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #42a5f5;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e88e5;
+        }
+
+        @media screen and (max-width:414px) {
+            label {
+                font-size: 0px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .form-group {
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Thông tin người dùng</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullname">Họ tên:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày sinh:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Nhập địa chỉ của bạn" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gửi</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

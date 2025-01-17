@@ -1,0 +1,53 @@
+.body {
+    font-family: Arial;
+    margin: 0;
+    padding:0;
+    background-color: white ;
+}
+span.ratingA {
+    color:black
+}
+span.ratingB{
+    color:rgba(160, 160, 160, 0.483);
+}
+span.ratingC{
+    color:#ffcc00
+}
+span.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+span.price>sup{
+    vertical-align: super;
+    text-decoration: underline;
+}
+.voucher{
+    border:1px solid #b0b5bbf3;
+    background-color:rgb(162, 162, 162) ;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.mau{
+    font-weight: bold;
+    font-size:20px;
+}
+.select1,.select2 {
+    border:1px solid;
+    border-radius: 5px;
+    width: 4cm;
+    height:auto;
+    margin: 0px;
+    padding-top:1p;
+    padding-bottom:1px; 
+}
+.select1 img,.select2 img {
+    width: 1cm; 
+    height: auto; 
+}
+.field-container {
+    display: flex; 
+    gap: 10px;
+}
+
+
+

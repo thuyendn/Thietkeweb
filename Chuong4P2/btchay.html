@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="text" id="text">
+        Thiết kế trang có nội dung như sau: Khi click vào tên một thành phố, 
+        sẽ hiển thị hình ảnh của thành phố tương ứng ở trên, bao quanh có đường viền 
+        màu crimson
+    </div>
+    <div class="buttons">
+        <button id="btnUp">Tang</button>
+        <button id="btnDown">Giam</button>
+    </div>
+    <script>
+        const text = document.getElementById("text");
+        const Up = document.getElementById("btnUp");
+        const Down = document.getElementById("btnDown");
+
+        function UpSize() {
+            let currentSize = parseFloat(window.getComputedStyle(text).fontSize);
+            text.style.fontSize = (currentSize + 2) + "px"; 
+        }
+
+        function DownSize() {
+            let currentSize = parseFloat(window.getComputedStyle(text).fontSize);
+                text.style.fontSize = (currentSize - 2) + "px";
+        }
+    
+        Up.addEventListener("click", UpSize);
+        Down.addEventListener("click", DownSize);
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let size="14"
+        function zoom(isZoomin)
+        {
+            if (isZommin=true)
+                size
+        }
+    </script>
+</head>
+<body style="font-size:14px">
+    
+</body>
+</html>
+
+
+
+

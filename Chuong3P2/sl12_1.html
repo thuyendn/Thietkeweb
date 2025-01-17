@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center; /* Căn giữa theo chiều ngang */
+                align-items: center;
+                height: 100vh;
+            
+                background-color: #f0f0f0;
+            }
+                body {
+                color: white;
+                } 
+                @media screen and (max-width:639px) {
+                body {
+                    background-color:rgb(56, 142, 142);
+                    } }
+                @media screen and (min-width: 768px) {
+                body {
+                background-color:blueviolet;
+                } }
+                @media screen and (min-width: 1024px) {
+                body {
+                background-color: blue;
+                } }
+                .hop {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 1px ridge gainsboro;
+                }
+                .hop .item{
+                    display: flex;
+                    margin-left: 1vw;
+                    margin-top: 0.5vw;
+
+                }
+                .hop .item>label{
+                    width: 30%;
+                    font-weight: bold;
+                }
+        </style>
+        
+    </head>
+    <body>
+        <div class="hop">
+            <form>
+                <div class="item hoten">
+                    <label for="hvt">Họ tên</label>
+                    <input type="text" id ='hvt' name='hvt'>
+                </div>
+        
+                <div class="item nsh">
+                    <label for="birthdaytime">Ngày sinh</label>
+                    <input type="datetime-local" id ='birthdaytime' name='birthdaytime'>
+                </div>   
+
+                <div class="item email">
+                    <label for="email">Email</label>
+                    <input type="email" id ='email' name='email'>
+                </div>
+
+                <div class="item sdt">
+                    <label for="sdt">SĐT </label>
+                    <input type="tel" id ='sdt' name='sdt'>
+                </div>
+
+                <div class="item dk">
+                    <input type="button" value='Đăng ký'>
+                </div>
+            </form> 
+        </div>
+
+
+        
+
+
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center; /* Căn giữa theo chiều ngang */
+                align-items: center;
+                height: 100vh;
+            
+                background-color: #f0f0f0;
+                
+            }
+                body {
+                background-color:darkcyan;
+                color: white;
+                } 
+                @media screen and (max-width:639px) {
+                    body {
+                    background-color:rgb(56, 142, 142);
+                    } }
+                @media screen and (min-width: 768px) {
+                body {
+                background-color:blueviolet;
+                } }
+                @media screen and (min-width: 1024px) {
+                body {
+                background-color: blue;
+                } }
+                .hop {
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    padding: 20px;
+                    border-radius: 10px;
+                }
+        </style>
+        
+    </head>
+    <body>
+        <div class="hop">
+            <div class="dsach"></div>
+            <label for="hvt">Họ tên</label>
+            <input type="text" id ='hvt' name='hvt'>
+    
+            <label for="birthdaytime">Ngày sinh</label>
+            <input type="datetime-local" id ='birthdaytime' name='birthdaytime'>
+    
+            <label for="email">Email</label>
+            <input type="email" id ='email' name='email'>
+    
+            <label for="sdt">SĐT </label>
+            <input type="tel" id ='sdt' name='sdt'>
+    
+            <input type="button" value='Đăng ký'>
+        </div>
+    </body>
+</html>
+
+-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            border:1px solid rgb(185, 182, 182);
+            padding: 10px;
+            color: aliceblue;
+
+        }
+        .bt{
+            width:70px
+        }
+        .ds{
+            display: flex;
+        }
+        
+        @media (max-width:640px) {
+            body{
+                background-color:#038988;
+            }
+            .ds{
+                flex-direction: column;
+                margin: 5px;
+            }
+
+        }
+        @media (min-width:768px) {
+            body{
+                background-color: #8a2be1;
+            }
+            
+            
+            .io{
+                display: flex;
+                justify-content: center;
+            }
+            .lable{
+                display:flex;
+                flex-direction: column; 
+                width:150px;
+                margin:5px;
+                font-weight: bold;
+            }
+            .input{ 
+                display:flex;
+                flex-direction: column;  
+                width:400px;
+                margin:5px
+            }
+        }
+        @media (min-width:1024px) {
+            body{
+                background-color: blue;
+            }
+            .io{
+                display:flex;
+                justify-content: center;
+            }
+            .input{
+                width:250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="io">
+        <form action="" class="form">
+            <div class="ds">
+                <label class="lable" for="name">Họ tên</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div class="ds">
+                <label class="lable" for="ngay">Ngày sinh</label>
+                <input class="input" type="date" id="ngay">
+            </div>
+            <div class="ds">
+                <label class="lable" for="email">Email</label>
+                <input class="input" type="email" id="email">
+            </div>
+            <div class="ds">
+                <label class="lable" for="sdt">SĐT</label>
+                <input class="input" type="number" id="sdt">
+            </div>
+            <div class="ds" >
+                <button class="bt">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            border:1px solid rgb(185, 182, 182);
+            padding: 10px;
+            color: aliceblue;
+
+        }
+        .bt{
+            width:70px
+        }
+        .ds{
+            display: flex;
+        }
+        
+        @media (max-width:640px) {
+            body{
+                background-color:#038988;
+            }
+            .ds{
+                flex-direction: column;
+                margin: 5px;
+            }
+
+        }
+        @media (min-width:768px) {
+            body{
+                background-color: #8a2be1;
+            }
+            
+            
+            .io{
+                display: flex;
+                justify-content: center;
+            }
+            .lable{
+                display:flex;
+                flex-direction: column; 
+                width:150px;
+                margin:5px;
+                font-weight: bold;
+            }
+            .input{ 
+                display:flex;
+                flex-direction: column;  
+                width:400px;
+                margin:5px
+            }
+        }
+        @media (min-width:1024px) {
+            body{
+                background-color: blue;
+            }
+            .io{
+                display:flex;
+                justify-content: center;
+            }
+            .input{
+                width:250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="io">
+        <form action="" class="form">
+            <div class="ds">
+                <label class="lable" for="name">Họ tên</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div class="ds">
+                <label class="lable" for="ngay">Ngày sinh</label>
+                <input class="input" type="date" id="ngay">
+            </div>
+            <div class="ds">
+                <label class="lable" for="email">Email</label>
+                <input class="input" type="email" id="email">
+            </div>
+            <div class="ds">
+                <label class="lable" for="sdt">SĐT</label>
+                <input class="input" type="number" id="sdt">
+            </div>
+            <div class="ds" >
+                <button class="bt">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+-->
+

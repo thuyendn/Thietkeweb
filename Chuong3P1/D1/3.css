@@ -1,0 +1,12 @@
+.nd {
+    font-family: verdana;
+    font-size: 16pt;
+    text-align: center;
+    color: blue
+}
+img {
+    width:400px;
+    height:300px;
+    border: 2px solid blue;
+    text-align:center
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display:grid;
+            grid-template-areas: 
+            'item1 item2 item2'
+            'item1 item3 item4'
+            'item5 item6 item6 ';
+            gap:10px;
+            text-align: center;
+
+        }
+        .item{
+            background-color: rgb(170, 221, 230);
+            padding:30px;
+        }
+        .item1{
+            grid-area: item1;
+        }
+        .item2{
+            grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .ite4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">Mục 1</div>
+        <div class="item item2">Mục 2</div>
+        <div class="item item3">Mục 3</div>
+        <div class="item item4">Mục 4</div>
+        <div class="item item5">Mục 5</div>
+    </div>
+</body>
+</html>

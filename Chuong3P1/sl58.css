@@ -1,0 +1,50 @@
+.body {
+    font-family: Arial;
+    margin: 0;
+    padding:0;
+    background-color: white ;
+}
+span.ratingA {
+    color:black
+}
+span.ratingB{
+    color:rgba(160, 160, 160, 0.483);
+}
+span.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+span.price>sup{
+    vertical-align: super;
+    text-decoration: underline;
+}
+.voucher{
+    border:1px solid rgb(239, 239, 239);
+    background-color:rgb(239, 239, 239) ;
+    border-radius: 5px;
+    margin-left:3mm;
+}
+.mau{
+    font-weight: bold;
+}
+.select1,.select2 {
+    border:1px solid;
+    border-radius: 5px;
+    width: 4cm;
+    height:auto;
+    margin: 0px;
+    padding-top:1p;
+    padding-bottom:1px; 
+}
+
+.select1 img,.select2 img {
+    width: 1cm; 
+    height: auto; 
+}
+.field-container {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con theo hàng */
+    gap: 10px;
+}
+
+
+

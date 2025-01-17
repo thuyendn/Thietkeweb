@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(34, 34, 34);
+            color: aliceblue;
+            height: 5vh;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10vw;
+            padding-right: 15px;
+        }
+
+        .ten {
+            font-size: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            gap: 20px;
+
+        }
+
+        .nav .menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            border: none;
+            background-color: rgb(71, 136, 255);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            /* Đổ bóng */
+        }
+
+        .nd2 {
+            background-color: grey;
+            padding: 30px;
+        }
+
+        .box p {
+            font-weight: bold;
+            font-size: xx-large;
+
+        }
+
+        .boxx {
+            display: flex;
+            flex-direction: column;
+            border: 2px;
+            padding: 10px;
+            flex: 3;
+            border: 0.5px solid rgb(212, 212, 212);
+            border-radius: 2px 2px 0px 0px;
+            gap: 10px
+        }
+
+        #mi {
+            font-size: 14px;
+            padding: 5px 10px;
+            align-self: flex-start;
+
+
+
+
+        }
+
+        .button {
+            border: 1px solid #ddd;
+            display: flex;
+            text-align: center;
+            align-items: end;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:640px) {}
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1024px) {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="ten">Start Bootstrap</div>
+            <div class="menu">
+                <div>Home</div>
+                <div>About</div>
+                <div>Contact</div>
+                <div>Services</div>
+            </div>
+        </div>
+        <div class="nd1">
+            <img src="#" width="900px" height="400px">
+            <div class="nd11">
+                <p>Business Name or Tagline</p>
+                <span>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
+                    but it makes a great use of the standard Bootstrap core components. Feel free to use this template
+                    for any project you want! </span><br>
+                <button name="calltoaction">Call to Action</button>
+            </div>
+        </div>
+
+        <div class="nd2">
+            <p>This call to action card is a great place to showcase some important information or display a clever
+                tagline!</p>
+
+        </div>
+
+        <div class="nd3">
+            <div class="box ">
+                <div class="boxx box1">
+                    <p>Card One</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime
+                        minus
+                        quam molestias corporis quod, ea minima accusamus.</span><br>
+                </div>
+                <div class="button"><button name="moreinfor" id='mi'>More info</button></div>
+            </div>
+
+            <div class="box">
+                <div class="boxx box2">
+                    <p>Card Two</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem
+                        enim!
+                        Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi
+                        labore.</span><br>
+                </div>
+                <div class="button"><button name="moreinfor" id='mi'>More info</button></div>
+            </div>
+
+            <div class="box">
+                <div class="boxx box3">
+                    <p>Card Three</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime
+                        minus
+                        quam molestias corporis quod, ea minima accusamus</span><br>
+                    <div class="button"><button name="moreinfor" id='mi'>More info</button></div>
+                </div>
+                <div class="button"><button name="moreinfor" id='mi'>More info</button></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

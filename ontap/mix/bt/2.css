@@ -1,0 +1,66 @@
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 30px 20px 10px 50px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  border: none;
+  background-color: aliceblue;
+  margin: 3px;
+  padding: 4px;
+  height: 5vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  flex-grow: 1;
+  /*cái nì đây*/
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.contact-info i {
+  color: rgb(0, 55, 255);
+  margin-bottom: -10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.hd {
+  color: rgb(0, 55, 255);
+  font-weight: bold;
+}
+
+.tag p {
+  margin-bottom: px;
+}
+
+.tag i {
+  margin-bottom: 5px;
+  /* Hoặc 0 nếu bạn muốn không có khoảng cách */
+}

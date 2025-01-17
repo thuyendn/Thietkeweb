@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcontainer {
+            display:grid;
+            background-color: orange;
+            gap: 5px;
+            grid-template-areas:    'item1 item1 item1'
+                                    'item2 item3 item4'
+                                    'item2 item5 item5';
+            padding:5px
+        }
+
+        .items {
+
+            background-color: rgb(255, 237, 203);
+            text-align: center;
+            padding: 20px
+        }
+
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .item3 {
+            grid-area: item3;
+        }
+
+        .item4 {
+            grid-area: item4;
+        }
+
+        .item5 {
+            grid-area: item5;
+        }
+        @media screen and (max-width:640px){
+            .gridcontainer{           
+                grid-template-areas:    'item1'
+                                        'item2'
+                                        'item3'
+                                        'item4'
+                                        'item5'
+                                        ;
+            }
+        }
+        @media (min-width:768px){
+            .gridcontainer{           
+                grid-template-areas:    'item1 item1 item1'
+                                        'item2 item3 item4'
+                                        'item2 item5 item5';
+            }
+        }
+        @media (min-width:1024px){
+            .gridcontainer{           
+                grid-template-areas:    'item1 item1 item1'
+                                        'item2 item3 item4'
+                                        'item2 item5 item5';
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="items item1">Header</div>
+        <div class="items item2">Menu</div>
+        <div class="items item3">Main</div>
+        <div class="items item4">Right</div>
+        <div class="items item5">Footer</div>
+    </div>
+</body>
+
+</html>
+
+
+
+

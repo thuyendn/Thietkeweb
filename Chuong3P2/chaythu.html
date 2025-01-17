@@ -1,0 +1,157 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Global styles */
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+
+            .form-container {
+                padding: 20px;
+                border: 5px solid #007BFF;
+                border-radius: 8px;
+                width: 100%;
+                max-width: 400px;
+                background-color: darkcyan;
+                color: white;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+            }
+
+            label {
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            input {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            /* Style cho nút bình thường */
+            button {
+                padding: 10px;
+                border: 1px solid #ccc; /* Viền bình thường */
+                background-color: #f0f0f0; /* Màu nền bình thường */
+                color: black; /* Màu chữ đen */
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 4px;
+                margin-top: 10px; /* Để tách nút ra khỏi các input */
+                text-align: left; /* Căn văn bản trong nút về trái */
+            }
+
+            button:hover {
+                background-color: #e0e0e0; /* Đổi màu khi hover */
+            }
+
+            /* Breakpoint for devices smaller than 640px */
+            @media (max-width: 640px) {
+                .form-container {
+                    background-color: rgb(56, 142, 142);
+                }
+            }
+
+            /* Breakpoint for devices between 641px and 1023px */
+            @media (min-width: 641px) and (max-width: 1023px) {
+                .form-container {
+                    background-color: #9c27b0;
+                }
+            }
+
+            /* Breakpoint for devices 1024px and larger */
+            @media (min-width: 1024px) {
+                .form-container {
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="hvt">Họ tên</label>
+                    <input type="text" id="hvt" name="hvt">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdaytime">Ngày sinh</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="sdt">SĐT</label>
+                    <input type="tel" id="sdt" name="sdt">
+                </div>
+
+                Nút Đăng ký ở bên trái và có định dạng bình thường 
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+ justify-content: space-evenly;
+ align-items: end; 
+        }
+        .box {
+            background-color: #58257b;
+            width: 100px;
+            height: 200px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            font-size: 30px; 
+           }
+            .box1{order: 2;}
+            .box2{order: 1;}
+            .box3{order: 3;}
+            .box4{order: 5;}
+            .box5{order: 4;}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+</html>
+
+

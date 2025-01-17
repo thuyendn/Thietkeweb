@@ -1,0 +1,30 @@
+html,body{
+    text-align: center;
+}
+h1 span{
+    color:aqua
+    
+}
+.text{
+    text-align: center;
+}
+.box{
+
+}
+.box1{
+    display: flex;
+    gap: 0.5cm;
+    justify-content: center; 
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    height: 60px; 
+    background-color: #000;
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+}
+

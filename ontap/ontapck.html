@@ -1,0 +1,504 @@
+<a href =”###”>Hello World</a>
+<img src=”img_logo.jpg”>
+Thẻ <nav>
+    
+    Dùng để chứa liên kết, nhằm điều hướng người dùng đến những nội dung chính của
+    website;
+    <header>
+    <nav>
+    <a href="/html">HTML</a>
+    <a href="/css">CSS</a>
+    <a href="/js">JavaScript</a>
+    <a href="/jquery">jQuery</a>
+    </nav>
+    </header>
+
+     Thẻ <section>
+        
+        Dùng để phân chia các phần riêng biệt của trang HTML;
+         Thẻ <article>
+        
+        Dùng để chứa các nội dung độc lập trong trang, không phụ thuộc vào nội dung chứa trong
+        trang;
+         Thẻ <aside>
+        
+        Chứa thông tin phụ của trang, nội dung có thể bị xóa đi mà không làm ảnh hưởng đến nội
+        dung chính của trang
+
+        <hr style="height:5px; background-color:black; border:none;">
+        <hr style="height:5px; background-color:black; border-radius:5px">
+
+
+        <hr style="height:5px; background-color:black; border-radius:5px">
+
+        <hr style="height:5px; background-color:black; border-radius:5px; border:none; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">
+        Thẻ <img>
+         Dùng để chèn hình vào trang web;
+         Cú pháp:
+        <img src="url_pic" alt="value" width="value" height="value">
+        – Thẻ thuộc tính:
+        » src: chứa đường dẫn URL hình cần chèn;
+        » alt: chứa nội dung thông báo khi đưa trỏ chuột lên hình;
+        » width, height: chiều rộng và chiều cao của hình;
+        – Ví dụ:
+        <img src="https://hoctructuyen123.net/wpcontent/uploads/2021/10/Logo_HocTrucTuyen123.NET_-1.png"
+        alt="Visit hoctructuyen123!" width="300" height="100">
+
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách dấu chấm</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách ô vuông</title>
+    <style>
+        ul {
+            list-style-type: none; /* Đặt dấu đầu dòng là ô vuông */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+</body>
+</html>
+
+
+Các thẻ chính:
+ <table> … </table>: định nghĩa cấu trúc bảng;
+ <caption> … </caption>: định nghĩa tên cho bảng;
+ <th> … </th>: định nghĩa 1 tiêu đề cột (table headers);
+ <tr> … </tr>: định nghĩa 1 dòng (table rows);
+ <td> … </td>: định nghĩa 1 ô (table cells);
+ <thead> ... </thead>: nhóm các thẻ làm tiêu đề cho bảng;
+ <tbody> ... </tbody>: nhóm các thẻ là phần nội dung chính của bảng;
+ <tfoot> ... </tfoot>: nhóm các thẻ làm phần chân cho bảng
+
+
+
+<table border="1px" width="500px">
+    <caption>Company Information</caption>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+    </tr>
+</table>
+
+
+
+
+
+ Các thuộc tính:
+<table border="1px" width="200px">
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>Rose</td>
+        <td>30</td>
+    </tr>
+</table>
+
+
+
+<table border="1px;" width="500px;">
+    <thead>
+        <th>Tên hàng hóa</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>Thành tiền</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Chuột máy tính</td>
+            <td>
+                5</td>
+            <td>150</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>USB</td>
+            <td>10</td>
+            <td>50</td>
+            <td>500</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th colspan="3">Tổng cộng</th>
+        <th>1,250</th>
+    </tfoot>
+</table>
+
+
+
+
+NHÓM THẺ FORMS
+ Thẻ form
+ Thuộc tính action
+– action="url"
+ Thuộc tính method
+– method="post"
+– method="get"
+<form action="/doAction" method="post">
+...
+<button type="submit">Submit</button>
+</form>
+
+ Ví dụ:
+<form method="post" action="/search">
+    <label for="TenSanPham">Tên sản phẩm:</label>
+    <input type="text" value="abc" id="TenSanPham" name="TenSanPham">
+    <button name="btn_Tim">Tìm</button>
+</form>
+
+
+ Thẻ textarea
+ Các thuộc tính: rows, cols, minlength, maxlength, readonly;
+<label for="w3review">Review of W3Schools:</label></p>
+<textarea id="w3review" name="w3review" rows="4" cols="50" minlength="10" maxlength="200">
+At w3schools.com you will learn how to make a website. They offer free
+tutorials in all web development technologies.
+</textarea>
+ Cấu trúc thẻ Input
+ Thuộc tính type
+<input type="button" value="button_name" onclick="function_onclick_event()" id="id_of_input" name="name_of_input">
+
+Button Nút lệnh tùy chọn
+Submit Nút lệnh submit
+Reset Nút lệnh khởi tạo dữ liệu
+Text Hộp nhập văn bản đơn dòng
+Password Hộp nhập mật khẩu
+Email Hộp nhập địa chỉ email
+Tel Hộp nhập số điện thoại
+URL Hộp nhập địa chỉ web
+Checkbox Hộp chọn nhiều trong nhiều
+Radio Hộp chọn 1 trong nhiều
+Date Hộp chọn kiểu ngày tháng năm
+Datetimelocal
+Hộp chọn kiểu ngày tháng năm + giờ phút
+Time Hộp chọn kiểu giờ phút
+File Hộp chọn file
+Image Hiển thị hình ảnh
+Number Hộp nhập liệu giá trị số từ bàn phím
+Range Hộp nhập liệu kiểu số bằng thanh cuộn
+
+
+
+ Cấu trúc thẻ Input
+ Text type:
+– Thuộc tính readonly, placeholder
+ Password type:
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd">
+
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" placeholder="Enter your first name here ...">
+
+
+ Email type:
+<form>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
+    <input type="submit" value="Send">
+</form>
+
+ Tel type:
+<form>
+    <label>Enter your phone: </label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+    <input type="submit" value="Submit">
+</form>
+
+ Url type:
+<form>
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage">
+    <input type="submit" value="Submit">
+</form>
+
+
+Cấu trúc thẻ Input
+ Thuộc tính required
+– Thiết lập trường dữ liệu không được để trống
+ Thuộc tính minlength và maxlength
+– Quy định chiều dài tối thiểu và tối đa của dữ liệu
+<form>
+    <label for="your_name">Your name:</label><br>
+    <input type="text" id="your_name" name="your_name" required minlength="20" maxlength="100"><br>
+    <label for="your_phone">Your phone:</label><br>
+    <input type="tel" id="your_phone" name="your_phone" required minlength="10" maxlength="10"><br>
+    <input type="submit" value="Submit">
+</form>
+
+Cấu trúc thẻ Input
+ Checkbox type:
+<input type="checkbox" id="dog" name="dog" value="Dog">
+<label for="dog">I like dogs</label>
+<input type="checkbox" id="cat" name="cat" value="Cat">
+<label for="cat">I like cats</label>
+
+ Radio type và thuộc tính checked
+<input type="radio" id="light" name="theme" value="Light" checked>
+<label for="light">Light</label>
+<input type="radio" id="dark" name="theme" value="Dark">
+<label for="dark">Dark</label>
+ Thẻ fieldset và thẻ legend
+<fieldset id="sex">
+<legend>Sex</legend>
+<input type="radio" value="male" name="sex" checked> Male
+<input type="radio" value="female" name="sex"> Female
+</fieldset>
+ Cấu trúc thẻ Input
+ Date type:
+<label for="dob">Date of birth:</label>
+<input type="date" id="dob" name="date of birth">
+Datetime-local type:
+<label for="birthdaytime">Birthday (date and time):</label>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime">
+Time type:
+<label for="appt">Select a time:</label>
+<input type="time" id="appt" name="appt">
+Cấu trúc thẻ Input
+ File type và thuộc tính multiple
+ Image type
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile">
+
+
+Number type:
+– Thuộc tính min, max
+» Quy định giá trị kiểu số tối thiểu và tối đa cho hộp nhập liệu;
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+
+Range type:
+– Thuộc tính step
+» Quy định giá trị bước nhảy;
+– Thuộc tính min, max
+» Quy định giá trị tối thiểu và tối đa;
+– Thuộc tính step
+» Quy định giá trị bước nhảy;
+– Thuộc tính value
+» Định nghĩa giá trị mặc của đối tượng;
+<label for="volume">Volume:</label>
+<input type="range" id="volume" name="volume" min="0" max="10" step="1">
+
+Thuộc tính list và thẻ datalist
+<label for="browser">Choose from the list:</label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+
+
+Thẻ select
+<label for="browser">Choose from the list:</label><br>
+<select id="browser" name="browser">
+    <option value="Edge">Edge</option>
+    <option value="Firefox">Firefox</option>
+    <option value="Chrome">Chrome</option>
+    <option value="Opera">Opera</option>
+    <option value="Safari">Safari</option>
+</select>
+
+
+Q Quarter-millimeters 1 Q = 1/40 cm
+mm Millimeters 1 mm = 0.1 cm
+cm Centimeters 1 cm = 37.8 px = 25.2/64 in
+in Inches 1 in = 2.54 cm = 96 px
+pc Picas 1 pc = 1/6 in
+pt Points 1 pt = 1/72 in
+px Pixels 1 px = 1/96 in
+
+
+Đơn vị tương đối
+Đơn vị Mô tả
+em Kích thước phông chữ, vd: 3 em
+vw % chiều rộng viewport (viewport width), vd: 2 vw
+vh % chiều cao viewport (viewport height), vd: 5 vh
+% Giá trị phần trăm liên quan đến phần tử chứa nó, vd: 20%
+
+
+<p style="border-style:dashed; border-width:medium">Thương mại đt</p>
+
+aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao của viewport;
+ min-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao của viewport;
+ max-aspect-ratio: Tỉ lệ tôi đa giữa chiều rộng và chiều cao của viewport;
+ color: Số bits cho mỗi màu sắc của device;
+ color-index: Số lượng màu sắc mà device có thể hiển thị;
+ device-aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao;
+ max-device-aspect-ratio: Tỉ lệ tối đa giữa chiều rộng và chiều cao;
+ min-device-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao;
+ device-height: Chiều cao của device;
+ device-width: Chiều rộng của device;
+
+height: Chiều cao của viewport;
+ width: Chiều rộng của viewport;
+ max-width: Chiều rộng tối đa của viewport;
+ min-width: Chiều rộng tối thiểu của viewport;
+ max-height: Chiều cao tối đa của viewport;
+ min-height: Chiều cao tối thiểu của viewport;
+ min-device-width: Chiều rộng tối thiểu của device;
+ max-device-width: Chiều rộng tối đa của device;
+ min-device-height: Chiều cao tối thiểu của device;
+ max-device-height: Chiều cao tối đa của device;
+ orientation: Định hướng của khung nhìn (xoay hoặc không xoay thiết bị);
+ resolution: Độ phân giải của thiết bị đầu ra (sử dụng dpi hoặc dpcm);
+
+
+ Columns (Cột)
+ Hàng dọc của các thành phần grid được gọi là cột;
+ Thuộc tính grid-template-columns, cho phép điều chỉnh hiển thị của cột;
+TỰ động cân bằng
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+Tuỳ chỉnh tỉ lệ
+    .grid-container {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    }
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 70px 120px 90px;
+            background-color: blue;
+            
+            }
+        .h1 {
+                /* grid-column-start: 1;
+                grid-column-end: 3; */
+                
+                    grid-column: 1/3;
+                    
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="h1">1</div>
+        <div class="2">2</div>
+        <div class="3">3</div>
+        <div class="4">4</div>
+        <div class="5">5</div>
+        <div class="6">6</div>
+        <div class="7">7</div>
+        <div class="8">8</div>
+        <div class="99">9</div>
+    </div>
+</body>
+</html>
+
+
+
+
+Rows (Dòng)
+ Các hàng ngang của các thành phần grid được gọi là hàng;
+ Thuộc tính grid-template-rows, cho phép điều chỉnh hiển thị của hàng;
+
+Gộp cột từ line 1 đến 3
+.grid-item1 {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+ Gộp hàng với 3 thuộc tính: grid-row-start, grid-row-end, grid-row;
+.grid-item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+    .grid-item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        }
+           
+         Areas (Khối)
+         Một khối bao gồm nhiều ô liên tục;
+         Kết hợp các thuộc tính gộp cột và dòng với thuộc tính: grid-area
+        – Cú pháp:
+        – Ví dụ:
+        15/30
+        .grid-item
+        {
+        grid-area: [grid-row-start]/[grid-column-start]/[grid-row-end]/[grid-column-end];
+    }
+
+
+    .grid-item8 {
+        grid-area: 1 / 2 / 5 / 6;
+        }
+
+         Có thể định nghĩa layout với thuộc tính: grid-template-areas
+        16/30
+        .grid-container {
+        display: grid;
+        grid-template-areas: 'item1 item8 item8 item8 item8 item2'
+        'item3 item8 item8 item8 item8 item4'
+        'item5 item8 item8 item8 item8 item6'
+        'item7 item8 item8 item8 item8 item9'
+        'item10 item11 item12 item13 item14 item15';
+    }
+    .grid-item8 {
+    grid-area: item8;
+    }

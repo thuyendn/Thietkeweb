@@ -1,0 +1,342 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+            background-color: aliceblue;
+            border-radius:5px;         
+            box-shadow: 5px 5px#e0dbdb;
+            
+            
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+                
+           
+        }
+        input{
+            background-color: #fae9fb; 
+            color:#a0a0a0;
+            border: none;
+            padding:10px;
+            
+            width:100%;
+             box-sizing: border-box;
+        }
+        body {
+          background-color: #fae9fb;
+    
+        }
+        .nhap{
+            
+            width: auto;
+         
+        }
+        h1{
+            font-size: 15px;
+        }
+        .btn{
+          
+            
+            width:150px;
+            
+           
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+       <img src="../thigk/46/images/Cau3.png">
+        <form>
+            <h1>Send us a message</h1>
+            <div class="nhap">
+                
+                <div class='nhap1'>
+                    <input type="text" 
+                    placeholder="Enter your name"class="nhap1" required>
+                    
+                     <input type="text" placeholder="Enter your email"class="nhap1"required>
+                </div>
+                
+                <div class='nhap2'>  
+                     <input type="text" placeholder="Enter your email"class="nhap1"required>
+                </div>
+                
+                 
+                <div class='btn'>
+                    <button type="submit">Send Now</button> 
+                </div>
+                
+            </div>  
+                 
+           
+        </form>
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="51_Cau3.css">
+<style>
+    
+body {
+    font-family: arial;
+    margin: 20px 40px;
+    background-color:#FAE9FB ;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    box-shadow: 0px 0px 8px #A0A0A0;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px 20px;
+    border: 1px solid transparent;
+}
+.image {
+    text-align: center;
+}
+img {
+    width: 350px;
+}
+.hd{
+    color: #BA24C2;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.button > input {
+    background-color: #FAE9FB;
+    border: transparent;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.button, .button1 {
+    padding-bottom: 10px;
+}
+.button1 input {
+    padding-bottom: 50px;
+    width: 100%;
+    padding: 10px 0px 50px 10px;
+    background-color: #FAE9FB;
+    border: transparent;
+    border-radius: 5px;
+}
+button {
+    background-color: #BA24C2;
+    border: transparent;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+}
+.button2 {
+    margin-right: -10px;
+}
+.right {
+    padding-right: 10px;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="image">
+                <img src="./../images/contact.png">
+            </div>
+            <div class="right">
+                <div class="hd">
+                    Send us a message
+                </div>
+                <div class="button">
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                </div>
+                <div class="button">
+                    <input type="text" id="mail" name="mail" placeholder="Enter your email" required>
+                </div>
+                <div class="button1">
+                    <input type="text" id="mess" name="mess" placeholder="Enter your message" required>
+                </div>
+                <div class="button2">
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./2.css" </head>
+    <style>
+            body {
+          background-color: blueviolet;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .container {
+          display: flex;
+          background-color: white;
+          width: 100%;
+          padding: 30px 20px 10px 50px;
+          margin-right: 5px;
+          box-sizing: border-box;
+        }
+
+        .input {
+          width: 100%;
+          display: flex;
+          border: none;
+          background-color: aliceblue;
+          margin: 3px;
+          padding: 4px;
+          height: 5vh;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .form {
+          flex-grow: 1;
+          /*cái nì đây*/
+          padding: 5px;
+          box-sizing: border-box;
+        }
+
+        .contact-info i {
+          color: rgb(0, 55, 255);
+          margin-bottom: -10px;
+        }
+
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 10px;
+          justify-content: space-around;
+          text-align: center;
+        }
+
+        .hd {
+          color: rgb(0, 55, 255);
+          font-weight: bold;
+        }
+
+       
+
+        .tag i {
+          margin-bottom: 5px;
+          /* Hoặc 0 nếu bạn muốn không có khoảng cách */
+        }
+        .dc{
+            margin-bottom: -10px;
+        }
+        
+
+    </style>
+
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <div class="tag">
+                <i class="fas fa-map-marker-alt"></i><br>
+                
+                <p class='dc'>Address</p>
+                <p style="color:grey">Halo</p>
+
+            </div>
+
+            <div class="tag">
+                <i class="fas fa-phone-alt"></i>
+                <p class='dc'>Phone</p>
+            </div>
+
+            <div class="tag">
+                <i class="fas fa-envelope"></i>
+                <p class='dc'>Email</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="hd">Send us a message</div>
+                <div class="nd">If you have any word</div>
+
+                <input type="text" placeholder="Enter your name" class="input input1" required>
+                <input type="email" placeholder="Enter your email" class="input input2" required>
+                <textarea placeholder="Enter your message" class="input input3" required></textarea> <br>
+
+            </form>
+            <button type="submit">Send Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,45 @@
+
+header{
+    background-color: blue; 
+    color:white;
+    margin:5px; 
+    text-align: center;
+}
+
+h3{
+     color:blue;
+}
+.column{
+    background-color:darkgrey;
+    display:flex;
+    margin:5px;
+    flex-direction: column;
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;
+    padding:5px;
+    
+}
+img{
+    border-radius: 5px;
+}
+footer>p{
+    background-color: black;
+    text-align: center
+}
+
+
+@media screen and (max-width:768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto
+    }
+
+}
+
+@media screen and (min-width:769px) {
+    main{
+        display:grid;
+        grid-template-columns: auto auto auto ;
+    }
+}

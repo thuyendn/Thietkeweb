@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 15pt;
+            margin-top: 0.5vh;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            background-color: aquamarine;
+            max-width: 600px;
+
+        }
+
+        .form .item {
+            display: flex;
+            margin-left: 1vw;
+            margin-top: 0.5vw;
+
+        }
+
+        .form .item>label {
+            width: 30%;
+            font-weight: bold;
+        }
+
+        .form .item>input .form .item>textarea {
+            border-radius: 5px 5px;
+
+        }
+
+        .form button {
+            width: 100%
+        }
+
+        @media screen and (max-width:4140px) {
+            .form .item>label {
+                display: none;
+            }
+
+            .form .item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+            }
+
+            .item {
+                margin: 5px;
+            }
+
+            .form .item {
+                width: 95%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .form .item>label {
+                display: flex;
+            }
+        }
+
+
+        @media screen and (min-width:1024px) {
+            .form .item {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="form">
+    <div class="header">
+        <h1>Thông Tin Người Dùng</h1>
+    </div>
+    <form>
+        <div class="item hten">
+            <label>Họ tên: </label>
+            <input type="text" placeholder="Nhập họ tên" required>
+        </div>
+        <div class="item ngsinh">
+            <label>Ngày sinh</label>
+            <input type="date">
+        </div>
+        <div class="item dc">
+            <label>Địa chỉ</label>
+            <textarea placeholder="Nhập địa chỉ"></textarea>
+
+        </div>
+        <button type="submit">Gửi</button>
+    </form>
+
+
+</div>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Người Dùng</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .form-container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .form-title {
+            font-size: 1.5em;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .form-group input[type="date"] {
+            font-family: inherit;
+        }
+
+        .submit-btn {
+            background-color: #1a73e8;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #1558b0;
+        }
+
+        /* Style cho màn hình nhỏ hơn hoặc bằng 414px */
+        @media (max-width: 414px) {
+            .form-group label {
+                display: none;
+            }
+        }
+
+        /* Style cho màn hình từ 415px đến 768px */
+        @media (min-width: 415px) and (max-width: 1023px) {
+            .form-group label {
+                display: block;
+            }
+        }
+
+        /* Style cho màn hình từ 1024px trở lên */
+        @media (min-width: 1024px) {
+            .form-group {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .form-group label {
+                width: 30%;
+                text-align: left;
+                /* Căn lề trái cho label */
+                margin-bottom: 0;
+                padding-right: 10px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 70%;
+                text-align: right;
+                /* Căn lề phải cho ô nhập liệu */
+            }
+
+            .submit-btn {
+                width: auto;
+                padding: 10px 20px;
+            }
+        }
+    </styl>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2 class="form-title">Thông Tin Người Dùng</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" placeholder="Nhập họ tên của bạn">
+            </div>
+            <div class="form-group">
+                <label for="date">Ngày sinh:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <textarea id="address" placeholder="Nhập địa chỉ của bạn"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gửi</button>
+        </form>
+    </div>
+
+</body>
+
+</html> -->

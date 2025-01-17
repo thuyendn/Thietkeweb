@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            background-color: rgb(243, 239, 239);
+            padding:15px;
+            gap:10px;
+        }
+        .box{
+            background-color: white;
+            padding:20px;
+            box-sizing: border-box;
+            display:grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            
+        }
+        @media screen and (max-width: 1024px) {
+            .box {
+                flex: 1 1 calc(33.3% - 15px); 
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .box {
+                flex: 1 1 calc(50% - 15px); 
+            }
+            .container .box9 {
+                display: none; /* Ẩn sản phẩm cuối */
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .box {
+                flex: 1 1 calc(25% - 15px); 
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1>Sản phẩm 1</h1>
+            <span clas="span">Mô tả sản phẩm 1</span>
+        </div>
+
+        <div class="box box2">
+            <h1>Sản phẩm 2</h1>
+            <span>Mô tả sản phẩm </span>
+        </div>
+        <div class="box box3">
+            <h1>Sản phẩm 3</h1>
+            <span>Mô tả sản phẩm 3</span>
+        </div>
+        <div class="box box4">
+            <h1>Sản phẩm 4</h1>
+            <span>Mô tả sản phẩm 4</span>
+        </div>
+        <div class="box box5">
+            <h1>Sản phẩm 5</h1>
+            <span>Mô tả sản phẩm 5</span>
+        </div>
+        <div class="box box">
+            <h1>Sản phẩm 6</h1>
+            <span>Mô tả sản phẩm 6</span>
+        </div>
+        <div class="box box7">
+            <h1>Sản phẩm 7</h1>
+            <span>Mô tả sản phẩm 7</span>
+        </div>
+        <div class="box box8">
+            <h1>Sản phẩm 8</h1>
+            <span>Mô tả sản phẩm 8</span>
+        </div>
+        <div class="box box9">
+            <h1>Sản phẩm 8</h1>
+            <span>Mô tả sản phẩm 8</span>
+        </div>
+    </div>
+</body>
+</html>

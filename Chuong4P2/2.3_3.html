@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+
+        .tp{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            font-weight: bolder;
+            text-align: left;
+        }
+        body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;    
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            flex-direction: row;
+            
+        }
+        .img{
+            border: 2px solid;
+            gap:5px;
+            padding:5px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+        
+        <div class="tp">
+            <div class="nd"
+            onmouseover="document.getElementById('city').src='hanoi.jpg'">
+            Hà Nội</div>
+        
+            <div class="nd"
+            onmouseover="document.getElementById('city').src='hue.webp'">
+            Huế</div>
+        
+            <div class="nd"
+            onmouseover="document.getElementById('city').src='dn.jpg'">
+            Đà Nẵng</div>
+    
+            <div class="nd"
+            onmouseover="document.getElementById('city').src='hcm.jpg'">
+            Hồ Chí Minh</div>
+        </div>
+       
+        
+        <div class="img">
+            <img id="city" >
+            <label for id="city" style="font-weight: bold;">Thủ đô Hà Nội</label>
+        </div>
+    
+    </div>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

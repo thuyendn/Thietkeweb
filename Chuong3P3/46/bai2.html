@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            gap:5px;
+        }
+        .it{
+            display:flex;
+            justify-content: center;
+            padding:20px;
+            height:100px 
+        }
+        .h{
+            background-color:rgb(246, 120, 120);
+            grid-area: h;
+           
+        }
+        .s{
+            background-color:rgb(245, 245, 150);
+            grid-area: s;
+            
+        }
+        .c{
+            background-color:aquamarine;
+            grid-area: c;
+            
+        }
+        .f{
+            background-color:aqua;
+            grid-area: f;
+           
+        }
+        @media screen and (max-width:640px){
+            .container{      
+                display:grid;     
+                grid-template-areas:    'h h h h'
+                                        'c c c c'
+                                        'f f f f';
+                
+
+            }
+            .s {
+                background-color: white;
+                color:white;
+            }
+            
+            
+        }
+        @media (min-width:768px){
+            .container{           
+                grid-template-areas:   'h'
+                                        'c'
+                                        's'
+                                        'f';
+            }
+        }
+        @media (min-width:1024px){
+            .container{           
+                grid-template-areas:  
+                'h h h h'
+                's s c c'
+                'f f f f';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="it h">Header</div>
+        <div class="it s">Sidebar</div>
+        <div class="it c">Content</div>
+        <div class="it f">Footer</div>
+    </div>
+</body>
+</html>

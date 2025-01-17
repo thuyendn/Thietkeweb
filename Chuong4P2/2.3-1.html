@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .row{
+            display:flex;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+        .label{
+            width:70px;
+        }
+        .line{
+            flex-grow: 1;
+            border-top: 1px solid black;
+        }
+        .container{
+            display: flex;
+            flex-direction:row;
+            gap:100px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="form1">
+            <div class="row">
+                <span class="label">Họ Tên:</span>
+                <input id="name"
+                onkeydown="document.getElementById('hienthiName').innerHTML=
+                document.getElementById('name').value">
+            </div>
+            
+            <div class="row">
+                <span class="label">Ngày sinh:</span>
+                <input id="date"
+                onkeydown="document.getElementById('hienthiDate').innerHTML=
+                document.getElementById('date').value">
+            </div>
+           
+            <div class="row">
+                <span class="label">Giới tính:</span>
+                <input id="gender"
+                onkeydown="document.getElementById('hienthiGender').innerHTML=
+                document.getElementById('gender').value">
+            </div>
+        </div>
+
+        <div class="form2">
+            <div class="row">
+                <span class="label">Họ tên:</span>
+                <span id="hienthiName"></span> 
+            </div>
+    
+            <div class="row">
+                <span class="label">Ngày sinh:</span>
+                <span id="hienthiDate"></span>
+            </div>
+    
+            <div class="row">
+                <span class="label">Giới tính:</span>
+                <span id="hienthiGender"></span>
+            </div>
+    </div>
+  </body>
+</html>
+
+
+
+

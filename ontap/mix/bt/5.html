@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+
+
+
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: 1fr 7fr 2fr;
+        }
+
+        /* ---------------header */
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .h_left {
+            margin-left: 10vw;
+            font-size: 2vw;
+        }
+
+        .h_right {
+            display: flex;
+            gap: 3vw;
+            margin-right: 2vw;
+        }
+
+        .item2,
+        .item3,
+        .item4 {
+            color: gray;
+        }
+
+        .h_item {
+            font-size: 1.5vw;
+        }
+
+        /* ---------------main */
+        main {
+            display: grid;
+            grid-template-rows: 3fr 1fr 2fr;
+            padding-top: 5vh;
+            padding-left: 10vw;
+            padding-right: 2vw;
+        }
+
+        /* dau */
+        img {
+            height: 48vh;
+            width: 50vw;
+            background-color: rgb(199, 199, 199);
+            border-radius: 4px;
+            flex: 2;
+        }
+
+        .dau {
+            display: flex;
+            gap: 3vw;
+            align-items: center;
+        }
+
+        .dau_ND {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1
+        }
+
+        /* giua */
+        .giua {
+            background-color: rgb(101, 97, 97);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 1.5vw;
+            margin-top: 25px;
+        }
+
+        /* cuoi */
+        .cuoi {
+            display: flex;
+            gap: 5vw;
+            margin-top: 5vh;
+
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 2px;
+            padding: 10px;
+            flex: 3;
+            border: 0.5px solid rgb(212, 212, 212);
+            border-radius: 2px 2px 0px 0px;
+            gap: 10px
+        }
+
+        .button {
+            background-color: rgb(235, 234, 232);
+            border: 0.5px solid rgb(212, 212, 212);
+            border-radius: 0px 0px 10px 10px;
+            padding: 5px;
+            padding-left: 8px;
+
+
+
+        }
+
+        .cuoi_td {
+            font-size: 2vw;
+            font-weight: bolder;
+        }
+
+        .cuoi_nd {
+            font-size: 1.3vw;
+        }
+
+        .bt {
+            color: white;
+            background-color: rgb(51, 51, 245);
+            border: 0;
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+        /* footer */
+        footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  -->
+    <header>
+        <div class="h_left">Start Bootstrap</div>
+        <div class="h_right">
+            <div class="h_item item1">Home</div>
+            <div class="h_item item2">About</div>
+            <div class="h_item item3">Contact</div>
+            <div class="h_item item4">Services</div>
+        </div>
+    </header>
+
+    <!--  -->
+    <main>
+        <div class="dau">
+            <img src="" alt="" />
+            <div class="dau_ND">
+                <div style="font-size: 2vw; font-weight: bolder;">Business Name or Tagline</div>
+                <div style="font-size: 1.3vw">
+                    This is a template that is great for small businesses. It doesn't
+                    have too much fancy flare to it, but it makes a great use of the
+                    standard Bootstrap core components. Feel free to use this template
+                    for any project you want!
+                </div>
+                <button
+                    style="width: fit-content; background-color: rgb(57, 57, 228); color: white; padding: 8px; border-radius: 2px; border: 0;">Call
+                    to Action!</button>
+            </div>
+        </div>
+
+        <div class="giua">
+
+            This call to action card is a great place to showcase some important
+            information or display a clever tagline!
+        </div>
+
+        <div class="cuoi">
+            <div class="item">
+                <div class="card">
+                    <div class="cuoi_td">Card One</div>
+                    <div class="cuoi_nd">
+                        This call to action card is a great place to showcase some
+                        important information or display a clever tagline!
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="bt">More Info</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card">
+                    <div class="cuoi_td">Card Two</div>
+                    <div class="cuoi_nd">
+                        This call to action card is a great place to showcase some
+                        important information or display a clever tagline! This is a
+                        template that is great for small businesses.
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="bt">More Info</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card">
+                    <div class="cuoi_td">Card Three</div>
+                    <div class="cuoi_nd">
+                        This call to action card is a great place to showcase some
+                        important information or display a clever tagline. Feel free to
+                        use this template for any project you want!
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="bt">More Info</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--  -->
+    <footer>
+        <div style="font-size: 1.5vw;">Copy Your Website 2023</div>
+    </footer>
+</body>
+
+</html>

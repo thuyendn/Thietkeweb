@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2px;
+}
+
+h1 {
+    color: #333;
+}
+
+span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 100%; /* Hình ảnh sẽ chiếm toàn bộ chiều rộng */
+        height: auto; /* Giữ tỷ lệ hình ảnh */
+    }
+    
+    h1 {
+        font-size: 24px; /* Thay đổi kích thước tiêu đề cho điện thoại */
+    }
+    
+    span {
+        font-size: 14px; /* Thay đổi kích thước văn bản cho điện thoại */
+    }
+}

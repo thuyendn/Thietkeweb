@@ -1,0 +1,181 @@
+vd8
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h2>Ví dụ về hàm gêtlementById</h2>
+    <p id="whattime">Mấy giờ roài ?</p>
+
+    <button type="button"
+    onclick="document.getElementById('whattime').innerHTML=Date()">
+  </body>
+</html> -->
+
+
+vd9
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button 
+    onclick="document.getElementById('Bongden').src='OIP.jpg'">
+    Bật đèn</button>
+
+    <img id="Bongden" src="tatden" style="width:100px">
+    
+    <button 
+    onclick="document.getElementById('Bongden').src='tatden.jpg'">
+    Tắt đèn</button>
+
+    
+</body>
+</html>
+
+vd10
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function on_click(){
+            document.getElementsByTagName('p')[0].innerHTML
+            ="Dòng một đã được thay đổi"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="on_click()">click here</button>
+
+    <p>dòng một</p>
+    <p>dòng hai</p>
+</body>
+</html> -->
+
+vd11
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            var x=document.getElementsByTagName('LI')
+            document.getElementById('demo').innerHTML=x[0].innerHTML
+        }
+    </script>
+</head>
+<body>
+    <p>Thực đơn:</p>
+    <ul>
+        <li>cf</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <button onclick='myFunction()'>click here</button>
+
+    <p id="demo"></p>
+</body>
+</html> -->
+
+
+vd12
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function on_click(){
+            document.getElementsByClassName('row1')[0].innerHTML
+            ="dòng 1 đã đc thay đổi"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="on_click()">click here</button>
+
+    <p class="row1">dòng 1</p>
+    <p class="row2">dòng 2</p>
+</body>
+</html> -->
+
+vd13
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello wordl!</p>
+    <script>
+        document.getElementById('demo').style.textAlign="center"
+    </script>
+</body>
+</html>
+
+
+
+vd14
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(){
+            document.getElementById('row2').style.color="red"
+
+            document.getElementById('row2').style.fontFamily="arial"
+            
+            document.getElementById('row2').style.fontSize="30px"           
+        }
+    </script>
+</head>
+<body>
+    <p id="row1">hello world</p>
+    <p id="row2" onclick="myFunction()">hello word!</p>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function  Align($align){
+            document.getElementsByTagName('h3')[0].style.textAlign=$align
+        }
+    </script>
+</head>
+<body>
+  
+    <h3  onmouseover="Align('right')"
+    onmouseover="Align('center')">nd đc căn lề</h3>
+   
+</body>
+</html> -->
+

@@ -1,0 +1,281 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <span>STAR BOOTSTRAP</span>
+            <li><a href='#'>PORTFOLIO</a></li>
+            <li><a href='#'>ABOUT</a></li>
+            <li><a href='#'>CONTACT</a></li>
+        </div>
+        
+        <div>
+            <i class="fa-solid fa-user-astronaut"></i>
+            <h1>START BOOTSTRAP</h1>
+        </div>
+    </div>
+</body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header and Navbar */
+        header {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        
+        .nav-links a:hover {
+            text-decoration: underline; /* Thêm hiệu ứng hover */
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?freelancer') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-text {
+            color: white;
+            background: rgba(0, 0, 0, 0.5); /* Thêm nền bán trong suốt */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .cta-button {
+            background: #0061f2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s; /* Thêm hiệu ứng chuyển động */
+        }
+        
+        .cta-button:hover {
+            background: #004bb5; /* Đổi màu khi hover */
+        }
+        
+        /* About Section */
+        .about-section, .services-section, .contact-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .about-section {
+            background: #f8f9fa; /* Nền sáng cho phần giới thiệu */
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px; /* Tăng kích thước tiêu đề */
+        }
+        
+        /* Services Section */
+        .services-section {
+            background: #ffffff; /* Nền trắng cho phần dịch vụ */
+        }
+        
+        .service {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            text-align: center; /* Căn giữa nội dung */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho box */
+            border-radius: 10px; /* Bo tròn góc */
+            margin: 10px 0; /* Khoảng cách giữa các box */
+        }
+        
+        .service i {
+            font-size: 40px;
+            color: #0061f2;
+            margin-bottom: 10px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+        }
+        
+        .service h3 {
+            margin: 10px 0;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa; /* Nền sáng cho phần liên hệ */
+        }
+        
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white; /* Nền trắng cho form */
+            border-radius: 10px; /* Bo tròn góc */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho form */
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background: #0061f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s; /* Thêm hiệu ứng chuyển động */
+        }
+        
+        button:hover {
+            background: #004bb5; /* Đổi màu khi hover */
+        }
+        
+        /* Footer */
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px; /* Khoảng cách giữa footer và phần trên */
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Freelancer</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Freelancer</h1>
+                <p>Your one-stop solution for all freelance needs!</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisi est, facilisis ac tellus eget, hendrerit aliquet elit. Sed non risus.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-pencil-ruler"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-mobile-alt"></i>
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelancer. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html> -->
